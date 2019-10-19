@@ -1,22 +1,17 @@
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class Solution {
     static int solveMeFirst(int a, int b) {
-      return a+b;
-   }
+        return a + b;
+    }
  
-public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int a;
+        int a, b;
+        System.out.print("Enter number 1:");
         a = in.nextInt();
-        int b;
+        System.out.print("Enter number 2:");
         b = in.nextInt();
-        int sum;
-        sum = solveMeFirst(a, b);
-        System.out.println(sum);
-   }
+        System.out.println("Sum of entered numbers: " + solveMeFirst(a, b));
+    }
 }
