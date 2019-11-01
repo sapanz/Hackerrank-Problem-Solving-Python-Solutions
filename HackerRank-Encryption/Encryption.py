@@ -10,8 +10,7 @@ def encryption(s):
     columns = int(math.ceil(L**(0.5)))
     output = ""
     for i in range(columns):
-        k = i
-        for j in range(k,L,columns):
+        for j in range(i,L,columns):
             output+=s[j]
         output+=" "
     return output
