@@ -9,8 +9,7 @@ import sys
 # Complete the bonAppetit function below.
 def bonAppetit(bill, k, b):
     del bill[k]
-    a = 'Bon Appetit' if (sum(bill)/2 == b)else (int(b-(sum(bill)/2)))
-    print(a)
+    print('Bon Appetit' if (sum(bill)/2 == b)else (int(b-(sum(bill)/2))))
 
 if __name__ == '__main__':
     nk = input().rstrip().split()
