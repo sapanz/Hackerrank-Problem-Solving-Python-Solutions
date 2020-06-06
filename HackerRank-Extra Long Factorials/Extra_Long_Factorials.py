@@ -8,13 +8,9 @@ import sys
 
 # Complete the extraLongFactorials function below.
 def extraLongFactorials(n):
-    ans=1
-    while(n!=1):
-        ans*=n
-        n-=1
-    print (ans)
+    if n == 1:
+        return 1
+    return n * extraLongFactorials(n-1)
 
 if __name__ == '__main__':
-    n = int(input())
-
-    extraLongFactorials(n)
+    print(extraLongFactorials(int(input())))
