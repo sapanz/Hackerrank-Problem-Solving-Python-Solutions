@@ -6,21 +6,20 @@ import random
 import re
 import sys
 
-# Complete the diagonalDifference function below.
+#
+# Complete the 'diagonalDifference' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts 2D_INTEGER_ARRAY arr as parameter.
+#
+
 def diagonalDifference(arr):
-    prim =0
-    sec=0
-    length = len(arr[0])
-    for count in range(length):
-        prim += arr[count][count]
-        sec += arr[count][(length-count-1)]
-    return abs(prim-sec)
-    
+    return abs(sum([arr[i][i] for i in range(len(arr))])-sum([arr[i][len(arr)-i-1] for i in range(len(arr))]))
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
-    n = int(input())
+    n = int(input().strip())
 
     arr = []
 
