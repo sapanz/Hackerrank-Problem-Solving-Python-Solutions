@@ -8,14 +8,7 @@ import sys
 
 # Complete the angryProfessor function below.
 def angryProfessor(k, a):
-    count=0
-    for i in range(len(a)):
-        if(a[i]<=0):
-            count+=1
-    if(count>=k):
-        return "NO"
-    return "YES"
-
+    return "NO" if len(list(filter(lambda x:x<=0, a)))>=k else "YES" 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
