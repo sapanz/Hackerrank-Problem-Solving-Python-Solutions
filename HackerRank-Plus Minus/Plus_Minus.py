@@ -18,9 +18,9 @@ def plusMinus(arr):
             neu+=1
         else:
             neg+=1
-    print(pos/len(arr))
-    print(neg/len(arr))
-    print(neu/len(arr))
+    print("{:.6f}".format(pos/len(arr))
+    print("{:.6f}".format(neg/len(arr))
+    print("{:.6f}".format(neu/len(arr))
 
 if __name__ == '__main__':
     n = int(input())
