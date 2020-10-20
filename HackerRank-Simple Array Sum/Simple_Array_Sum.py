@@ -1,12 +1,9 @@
 #!/bin/python3
 import os
-import sys
 
-def simpleArraySum(ar):
-    sum=0;
-    for i in range(len(ar)):
-        sum+=ar[i]
-    return (sum)
+
+def simple_array_sum(ar):
+    return sum(ar)
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
@@ -15,7 +12,7 @@ if __name__ == '__main__':
 
     ar = list(map(int, input().rstrip().split()))
 
-    result = simpleArraySum(ar)
+    result = simple_array_sum(ar)
 
     fptr.write(str(result) + '\n')
 
