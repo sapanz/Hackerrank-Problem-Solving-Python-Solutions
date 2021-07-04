@@ -8,15 +8,7 @@ import sys
 
 # Complete the bonAppetit function below.
 def bonAppetit(bill, k, b):
-    count=0
-    for i in range(len(bill)):
-        if(i!=k):
-            count+=bill[i]
-    pay = count//2
-    if(pay != b):
-        print(b-pay)
-    else:
-        print("Bon Appetit")
+    print('Bon Appetit' if (((sum(bill)-bill[k])/2 == b))else (int(b-((sum(bill)-bill[k])/2))))
 
 if __name__ == '__main__':
     nk = input().rstrip().split()
