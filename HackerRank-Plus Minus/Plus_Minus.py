@@ -18,9 +18,13 @@ def plusMinus(arr):
             neu+=1
         else:
             neg+=1
-    print(pos/len(arr))
-    print(neg/len(arr))
-    print(neu/len(arr))
+   # print(pos/len(arr))
+   # print(neg/len(arr))
+   # print(neu/len(arr))
+    # you can use round(var,6) to get the decimal up to 6 places
+    print(round(pos/len(arr),6))
+    print(round(neg/len(arr),6))
+    print(round(neu/len(arr),6))
 
 if __name__ == '__main__':
     n = int(input())
