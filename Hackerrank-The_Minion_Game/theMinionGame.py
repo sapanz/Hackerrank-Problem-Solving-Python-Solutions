@@ -5,10 +5,10 @@ def minion_game(string):
     kevin = 0
     stuart = 0
     for i in range(len(string)):
-        if s[i] in vowels:
-            kevin = kevin + (len(s)-i)
+        if string[i] in vowels:
+            kevin = kevin + (len(string)-i)
         else:
-            stuart = stuart + (len(s)-i)
+            stuart = stuart + (len(string)-i)
 
     if stuart > kevin:
         print('Stuart '+ str(stuart))
@@ -20,4 +20,5 @@ def minion_game(string):
 
 if __name__ == '__main__':
     s = input()
+
     minion_game(s)
